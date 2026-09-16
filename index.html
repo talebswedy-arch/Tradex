@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TradeX</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #0b0f14;
+      color: white;
+      min-height: 100vh;
+    }
+
+    header {
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #202832;
+    }
+
+    .logo {
+      font-size: 25px;
+      font-weight: bold;
+    }
+
+    .logo span {
+      color: #00d084;
+    }
+
+    .balance {
+      background: #151c24;
+      padding: 10px 14px;
+      border-radius: 10px;
+      font-size: 14px;
+    }
+
+    main {
+      padding: 20px;
+      max-width: 700px;
+      margin: auto;
+    }
+
+    .welcome {
+      margin-bottom: 20px;
+    }
+
+    .welcome h1 {
+      font-size: 27px;
+      margin-bottom: 7px;
+    }
+
+    .welcome p {
+      color: #8994a3;
+    }
+
+    .card {
+      background: #121820;
+      border: 1px solid #202a35;
+      border-radius: 16px;
+      padding: 18px;
+      margin-bottom: 18px;
+    }
+
+    .market {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .symbol {
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    .price {
+      font-size: 25px;
+      margin-top: 8px;
+    }
+
+    .change {
+      color: #00d084;
+      margin-top: 5px;
+    }
+
+    .chart {
+      height: 180px;
+      margin-top: 20px;
+      display: flex;
+      align-items: flex-end;
+      gap: 7px;
+      border-bottom: 1px solid #28323d;
+    }
+
+    .bar {
+      flex: 1;
+      background: #00d084;
+      border-radius: 5px 5px 0 0;
+      opacity: .8;
+    }
+
+    .actions {
+      display: flex;
+      gap: 12px;
+      margin-top: 20px;
+    }
+
+    button {
+      border: none;
+      padding: 15px;
+      border-radius: 10px;
+      color: white;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+      flex: 1;
+    }
+
+    .buy {
+      background: #00a86b;
+    }
+
+    .sell {
+      background: #d64545;
+    }
+
+    .assets {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+    }
+
+    .asset {
+      background: #151c24;
+      padding: 15px;
+      border-radius: 12px;
+    }
+
+    .asset small {
+      color: #8994a3;
+    }
+
+    nav {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: #11171e;
+      border-top: 1px solid #202832;
+      display: flex;
+      justify-content: space-around;
+      padding: 15px 5px;
+    }
+
+    nav div {
+      color: #8994a3;
+      font-size: 13px;
+      text-align: center;
+    }
+
+    nav .active {
+      color: #00d084;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="logo">Trade<span>X</span></div>
+  <div class="
